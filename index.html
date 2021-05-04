@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Pokepedia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./style/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+  </head>
+
+  <body onload="getList()">
+
+    <h1 id="title">Pokepedia</h1>
+    <div id="search_content">
+
+      <input id="input_search" type="search"/>
+      <button id="poke_search" class="btn btn-primary" onclick="searchPoke()"> Buscar</button>
+    </div>
+
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div id ="panel" class="col-2">
+          <h4>Filters</h4>
+          <button class="btn all mb-2" onclick="filterPoke('all')">All</button><br/>
+          <button class="btn normal mb-2" onclick="filterPoke('normal')">Normal</button><br/>
+          <button class="btn fire mb-2" onclick="filterPoke('fire')">Fuego</button><br/>
+          <button class="btn water mb-2" onclick="filterPoke('water')">Agua</button><br/>
+          <button class="btn grass mb-2" onclick="filterPoke('grass')">Planta</button><br/>
+          <button class="btn electric mb-2" onclick="filterPoke('electric')">Eléctrico</button><br/>
+          <button class="btn ice mb-2" onclick="filterPoke('ice')">Hielo</button><br/>
+          <button class="btn fighting mb-2" onclick="filterPoke('fighting')">Lucha</button><br/>
+
+          <button class="btn poison mb-2" onclick="filterPoke('poison')">Veneno</button><br/>
+          <button class="btn ground mb-2" onclick="filterPoke('ground')">Tierra</button><br/>
+          <button class="btn flying mb-2" onclick="filterPoke('flying')">Volador</button><br/>
+
+          <button class="btn psychic mb-2" onclick="filterPoke('psychic')">Psíquico</button><br/>
+          <button class="btn bug mb-2" onclick="filterPoke('bug')">Bicho</button><br/>
+          <button class="btn rock mb-2" onclick="filterPoke('rock')">Roca</button><br/>
+
+          <button class="btn ghost mb-2" onclick="filterPoke('ghost')">Fantasma</button><br/>
+          <button class="btn dragon mb-2" onclick="filterPoke('dragon')">Dragón</button><br/>
+          <button class="btn dark mb-2" onclick="filterPoke('dark')">Siniestro</button><br/>
+          <button class="btn steel mb-2" onclick="filterPoke('steel')">Acero</button><br/>
+          <button class="btn fairy mb-2" onclick="filterPoke('fairy')">Hada</button><br/>
+
+          <h4>By Region</h4>
+          <button class="btn kanto mb-2" onclick="searchRegion('kanto')">Kanto</button><br/>
+          <button class="btn johto mb-2" onclick="searchRegion('johto')">Johto</button><br/>
+          <button class="btn hoenn mb-2" onclick="searchRegion('hoenn')">Hoenn</button><br/>
+          <button class="btn sinnoh mb-2" onclick="searchRegion('sinnoh')">Sinnoh</button><br/>
+          <button class="btn teselia mb-2" onclick="searchRegion('teselia')">Teselia</button><br/>
+          <button class="btn kalos mb-2" onclick="searchRegion('kalos')">Kalos</button><br/>
+        </div>
+
+        <div class="col-8">
+          <div id="pokeList" class="row">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="./script/lib/axios.min.js"></script>
+    <script src="./script/index.js"></script>
+  </body>
+
+</html>

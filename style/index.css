@@ -1,0 +1,250 @@
+body {
+  background-color: #d0d0dd;
+}
+#title {
+  text-align: center;
+  margin: 2%;
+}
+
+#panel, #lista {
+  margin: 2%;
+  text-align: center;
+}
+
+#input_search {
+  text-align: center;
+}
+
+#search_content {
+  text-align: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+/*Colores de cada tipo de pokémon*/
+.all {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+}
+
+.normal {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #A8A77A;
+  color: white;
+}
+
+.fire {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #EE8130;
+  color: white;
+}
+
+.water {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #6390F0;
+  color: white;
+}
+
+.grass {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #7AC74C;
+  color: white;
+}
+
+.electric {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #F7D02C;
+  color: white;
+}
+
+.ice {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #96D9D6;
+  color: white;
+}
+
+.fighting {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #C22E28;
+  color: white;
+}
+
+.poison {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #A33EA1;
+  color: white;
+}
+
+.ground {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #E2BF65;
+  color: white;
+}
+
+.flying {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #A98FF3;
+  color: white;
+}
+
+.psychic {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #F95587;
+  color: white;
+}
+
+.bug {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #A6B91A;
+  color: white;
+}
+
+.rock {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #B6A136;
+  color: white;
+}
+
+.ghost {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #735797;
+  color: white;
+}
+
+.dragon {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #6F35FC;
+  color: white;
+}
+
+.dark {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #705746;
+  color: white;
+}
+
+.steel {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #B7B7CE;
+  color: white;
+}
+
+.fairy {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: #D685AD;
+  color: white;
+}
+
+/*Regions*/
+.kanto {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkgreen;
+  color: white;  
+}
+
+.johto {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkslateblue;
+  color: white;  
+}
+
+.hoenn {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkred;
+  color: white;  
+}
+
+.sinnoh {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkblue;
+  color: white;  
+}
+
+.teselia {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkorange;
+  color: white;  
+}
+
+.kalos {
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  background-color: darkslategrey;
+  color: white;  
+}
+
+
+/*
+  const colours = {
+    normal: '#A8A77A',
+    fire: '#EE8130',
+    water: '#6390F0',
+    electric: '#F7D02C',
+    grass: '#7AC74C',
+    ice: '#96D9D6',
+    fighting: '#C22E28',
+    poison: '#A33EA1',
+    ground: '#E2BF65',
+    flying: '#A98FF3',
+    psychic: '#F95587',
+    bug: '#A6B91A',
+    rock: '#B6A136',
+    ghost: '#735797',
+    dragon: '#6F35FC',
+    dark: '#705746',
+    steel: '#B7B7CE',
+    fairy: '#D685AD',
+  };
+*/

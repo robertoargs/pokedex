@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Pokemon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./style/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/pokemon.css">
+  </head>
+
+  <body onload="getPokemon()">
+
+    <label class="title">Número del Pokédex: </label> <span id="number"></span> <br/>
+    <label class="title">Nombre: </label> <span id="name"></span> <br/>
+    
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Imágenes</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><img id="male_front"></td>
+          <td><img id="male_back"></td>
+        </tr>
+        <tr>
+          <td><img id="female_front"></td>
+          <td><img id="female_back"></td>
+        </tr>
+        <tr>
+          <td><img id="male_sFront"></td>
+          <td><img id="male_sBack"></td>
+        </tr>
+        <tr>
+          <td><img id="female_sFront"></td>
+          <td><img id="female_sBack"></td>
+        </tr>
+      </tbody>
+    </table> <br/>
+
+    <label class="title" >Estadísticas</label> <br/> <br/>
+
+    <div class="container">
+      <div class="bar">
+        <div id= "health" class="skills salud">Salud</div>
+      </div>
+  
+      <div class="bar">
+        <div id="attack" class="skills ataque">Ataque</div>
+      </div>
+
+      <div class="bar">
+        <div id="defense" class="skills defensa">Defensa</div>
+      </div>
+
+      <div class="bar">
+        <div id="sp_attack" class="skills spAtaque">Ataque Especial</div>
+      </div>
+
+      <div class="bar">
+        <div id="sp_defense" class="skills spDefensa">Defensa Especial</div>
+      </div>
+
+      <div class="bar">
+        <div id="speed" class="skills velocidad">Velocidad</div>
+      </div>
+    </div>
+
+    <label class="title">Movimientos</label><br/><br/>
+    <ul id="pokeMoves">
+    </ul>
+
+    <label class="title">Debilidades</label><br/><br/>
+    <ul id="pokeWeaknesses">
+    </ul>
+
+    <table>
+      <th colspan="2">
+        Peso
+      </th>
+
+      <tbody>
+        <tr>
+          <td>Kilogramos</td>
+          <td id="kgs">Valor</td>
+        </tr>
+        
+        <tr>
+          <td>Libras</td>
+          <td id="lbs">Valor</td>
+        </tr>
+      </tbody>
+    </table> <br/>
+
+    <table>
+      <th colspan="2">
+        Altura
+      </th>
+
+      <tbody>
+        <tr>
+          <td>Metros</td>
+          <td id="mts">Valor</td>
+        </tr>
+        <tr>
+          <td>Pies</td>
+          <td id="ft">Valor</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./script/lib/axios.min.js"></script>
+    <script src="./script/pokemon.js"></script>
+  </body>
+
+</html>
